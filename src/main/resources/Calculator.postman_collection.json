@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "51929fe8-a54c-4ec9-8fdd-1c72c04be2d7",
+		"name": "Calculator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "postAddizione",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"numeri\":[\n\t\t\"3\",\n\t\t\"1\",\n\t\t\"2\",\n\t\t\"4\"\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/calculator/add3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"calculator",
+						"add3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAddizione 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"numeri\":[\n\t\t\"3\",\n\t\t\"1\",\n\t\t\"2\",\n\t\t\"4\"\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/calculator/add/2/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"calculator",
+						"add",
+						"2",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAddizione 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"numeri\":[\n\t\t\"3\",\n\t\t\"1\",\n\t\t\"2\",\n\t\t\"4\"\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/calculator/add2?numero1=2&numero2=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"calculator",
+						"add2"
+					],
+					"query": [
+						{
+							"key": "numero1",
+							"value": "2"
+						},
+						{
+							"key": "numero2",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
